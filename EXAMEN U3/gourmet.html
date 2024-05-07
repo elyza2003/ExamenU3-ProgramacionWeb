@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Gourmet</title>
+
+    <!-- Incluye los íconos de Font Awesome (opcional) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+     .footer {
+        background-color: #f0ebd7 ;
+       
+      }
+      body {
+        background-color: #6c4f34 ; 
+    }
+     .color{
+        background-color: #b08e6b;
+     }
+     .btn-color{
+      background-color: #6c4f34; /* Cambia el color al presionar */
+      color: white;
+     }
+     .btn-close{
+      background-color: #7a5c3c;
+     }
+     .btn-cupon{
+      background-color: #6c4f34;
+      color: white;
+     }
+     .navbar{
+      background-color: #f0ebd7 ;
+     }
+     .img-hover:hover {
+      transform: scale(1.30); /* Aumenta el tamaño de la imagen */
+      transition: transform 0.3s ease; /* Agrega una transición suave */
+     }
+     .fondo-row {
+      background-color: #8a6a4a; /* Color de fondo */
+      padding-top: 20px; /* Ajusta el espacio superior del row */
+      padding-bottom: 20px; /* Ajusta el espacio inferior del row */
+    }
+    @media (min-width: 768px) {
+      .carousel-container {
+        padding-top: 56px; /* Ajusta el padding-top para dispositivos de tamaño medio y superiores (tabletas, escritorio) */
+      }
+    }
+
+    @media (max-width: 767.98px) {
+      .carousel-container {
+        padding-top: 70px; /* Ajusta el padding-top para dispositivos pequeños (móviles) */
+      }
+    }
+    </style>
+</head>
+<body>
+  
+   <div class="container">
+    <!-- SCROLLPOLY EN EL NABVAR -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <d data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2 " tabindex="0">
+
+   <nav id="navbar" class="navbar bg-body-tertiary px-4 mb-4 fixed-top "> 
+    <h1><img src="img/logo1.png" alt="logo" width="80px" height="80px"> Gourmet</h1>  
+      <ul class="nav nav-pills "> 
+        <li class="nav-item ">
+          <a class="nav-link text-black" href="#scrollspyHeading1">About</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link text-black" href="#scrollspyHeading6">Ingresar</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-black" href="#scrollspyHeading3">Menu</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-black" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#scrollspyHeading7">Localizacion</a></li>
+            <li><a class="dropdown-item" href="#scrollspyHeading4">Rewards</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#scrollspyHeading5">Galeria de Productos</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav> 
+    <div class="container-fluid carousel-container">
+      <!-- carousel -->
+        <div class="col-md-12"> 
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <div class="carousel-indicators">              
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/Carousel.jpeg" class="d-block w-100" alt="">
+            </div>
+            <div class="carousel-item">
+              <img src="img/Carousel3.jpeg" class="d-block w-100" alt="...">
+           </div>
+            <div class="carousel-item">
+                    <img src="img/Carousel2.jpeg" class="d-block w-100" alt="...">
+            </div>
+         </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+   </div>   
+
+        <!-- MARGEN -->
+        <div class="row fondo-row">
+          <div class="col-md-6">
+            <img src="img/1.jpeg" alt="imagen" class="img-fluid" >
+          </div>
+          
+         <div class="col-md-6 my-auto">
+             <h1>Deliciosos especiales frappes</h1>
+             <h5>¡Descubre nuestros deliciosos frappés, hechos especialmente para ti! ¡Y no te pierdas nuestro variado menú, lleno de opciones irresistibles que te harán volver por más!</h5> <br>
+             <a class="btn btn-cupon btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal">Toca para ganar un cupon</a> 
+        </div>  
+         </div> 
+          <!-- Ventana modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">BIENVENIDO</h1>
+              <button type="button" class="btn btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                  <h5 class="fs-4 fw-lighter">¡Fantástico! Te has ganado un cupón para disfrutar de un delicioso frappé.</h5>
+              <img src="img/Logo.png" alt="Imagen modal" class="img-fluid">
+              </div>
+              <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <a href="https://www.starbucks.com.mx/menu" class="btn btn-color">Ir a la pagina</a> 
+              </div>
+          </div>
+          </div>
+      </div>
+      <!-- ABOUT -->
+      <div class="row color">
+        <br><h1 id="scrollspyHeading1" class="text-center col-md-12 p-5">About</h1>
+        <h5 class="text-center col-md-8 offset-md-2">Bienvenidos a <strong>"Gourmet"</strong>. Somos un equipo apasionado dedicado a brindarte una experiencia única en cada sorbo. Desde nuestros inicios, nos hemos comprometido a fusionar sabores exquisitos con una atención al detalle inigualable. <br> <br>          
+        En Gourmet, no solo creamos frappés, creamos momentos memorables. Cada bebida es una obra maestra artesanal, elaborada con ingredientes frescos y cuidadosamente seleccionados para garantizar el mejor sabor en cada sorbo.
+        <br></h5>
+       
+   <!-- FORMULARIO -->
+    <h1 id="scrollspyHeading6" class="text-center p-5">Ingresar</h1>
+   <div class="col-md-8 offset-md-2">
+    <div class="form-container">
+      <form id="loginForm">
+          <div class="form-group">
+            <label for="email"><h4>Correo Electrónico:</h4></label> <br>
+            <input type="email" class="form-control" id="email" name="email" placeholder="Ingresa tu correo electrónico" required>
+            </div> <br>
+          <div class="form-group">
+            <label for="password"><h4>Contraseña:</h4></label> <br>
+            <input type="password" class="form-control" id="password" name="password" placeholder="Ingresa tu contraseña" required>
+          </div> <br>
+            <a href="https://www.starbucks.com.mx/" class="btn btn-color btn-lg">Iniciar</a>
+      </form>
+    </div>
+  </div>  
+   <!-- Section card -->      
+   <h1 id="scrollspyHeading3" class="text-center p-5">Menu</h1> 
+   <div class="container">   
+    <div class="row">
+      <div class="col-md-6 col-lg-3 mb-4">
+        <div class="card " style="width: 18rem;">
+            <img src="img/card6.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Frappe Vainilla</h5>
+              <p class="card-text text-justify">Refrescante y delicioso, con el toque cremoso y dulce de la vainilla. ¡Perfecto para disfrutar en cualquier momento del día!</p>
+              <a href="https://www.starbucks.com.mx/producto/vainilla-cream-frappuccinor" class="btn btn-color">Ir a la pagina</a>
+              
+            </div>
+          </div>
+    </div>
+    <div class="col-md-6 col-lg-3 mb-4">
+        <div class="card" style="width: 18rem;">
+            <img src="img/card2.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Frappe Oreo</h5>
+              <p class="card-text text-justify"> Irresistible y cremoso, con trozos de galleta Oreo mezclados con helado y leche. ¡Una delicia del chocolate y las galletas!</p>
+              <a href="https://www.starbucks.com.mx/producto/cookies-cream-frappuccino" class="btn btn-color">Ir a la pagina</a>
+            </div>
+          </div>
+    </div>
+    <div class="col-md-6 col-lg-3 mb-4">
+        <div class="card " style="width: 18rem;">
+            <img src="img/card4.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Frappe fresa</h5>
+              <p class="card-text text-justify">Fresco y dulce, con el sabor vibrante de las fresas y la suavidad de la crema batida. ¡Una explosión de frescura en cada sorbo!</p> 
+              <a href="https://www.starbucks.com.mx/producto/berry-yogurt-frappuccinor" class="btn btn-color">Ir a la pagina</a>
+            </div>
+          </div>
+
+    </div>
+    <div class="col-md-6 col-lg-3 mb-4">
+      <div class="card" style="width: 18rem;">
+          <img src="img/card5.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Frappe Cafe</h5>
+            <p class="card-text text-justify"> Intenso y refrescante, con el sabor del café combinado con hielo y crema batida. Perfecto de una bebida fresca y deliciosa.</p> 
+            <a href="https://www.starbucks.com.mx/producto/cafe-frappuccinor" class="btn btn-color">Ir a la pagina</a>
+          </div>
+        </div>
+  </div>
+</div>
+
+    </div>      
+    
+
+    <div class="fondo-row">
+      <div class="col-md-12">
+        <img src="img/ites.jpeg" alt="imagen" class="img-fluid " >
+      </div>
+      
+        <h1 id="scrollspyHeading7" class="text-center p-3">Localizacion</h1>
+        <h5>Nos encuentras ubicados en: Calle Manuel Gómez Morín 300, Janicho, 38933 Salvatierra, Gto. En el edificio C planta alta salon TI-600 </h5> <br>
+        <a href="https://www.google.com/maps/dir//itess+ubicacion/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x842cc3442e93fedf:0x40fac664cb7638c5?sa=X&ved=1t:3061&ictx=111" class="btn btn-color justify-content-server">Ver ubicacion</a> 
+     
+     </div> 
+  
+  
+  
+<!-- SECTION DE ACCORDION -->
+<h1 id="scrollspyHeading4"class="text-center p-5" >Rewards</h1>
+<div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        Beneficios
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+    <div class="row">
+      <div class="accordion-body col-md-4 offset-md-2 text-center my-auto fs-4 fw-lighter p-5">
+        <p>¡Celebra tu día especial con un toque de dulzura! Ven por tu bebida de cumpleaños y deja que cada sorbo sea un brindis por ti.</p>
+    </div>
+      <div class="col-md-6 img-fluid p-3">
+          <img src="img/f1.jpeg" class="col-md-6 img-fluid" >
+        </div>
+        
+    </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        Ofertas
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="row">
+          <div class="accordion-body col-md-4 offset-md-2 text-center my-auto fs-4 fw-lighter p-5">
+              <p>¡No te pierdas nuestra oferta especial! Ven y aprovecha esta oportunidad única. ¡Te esperamos con las mejores opciones!</p>
+            </div>
+            <div class="col-md-6 img-fluid">
+              <img src="img/f3.jpeg"  class="col-md-6 img-fluid p-3">
+            </div>
+        </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+      Nivel Gold
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="row">
+          <div class="col-md-4 offset-md-2 text-center my-auto fs-4 fw-lighter p-5">
+            <p>¡Disfruta de un frappé gratis después de cada tres compras a la semana! ¡Porque tu lealtad merece ser recompensada! llevate el cuarto gratis</p>
+            </div>
+            <div class="accordion-body col-md-6 img-fluid">
+              <img src="img/f.jpeg" class="col-md-6 img-fluid">
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+<!-- GALERIA -->
+<h1 class="text-center p-5" id="scrollspyHeading5">Galeria de Productos</h1>
+  <div class="row">
+    <img src="img/Galeria1.jpeg" alt="Galeria imagen" class="col-md-4 img-fluid img-hover" >
+  
+  
+    <img src="img/Galeria2.jpeg" alt="Galeria imagen" class="col-md-4 img-fluid img-hover"> 
+      
+    <img src="img/Galeria3.jpeg" alt="Galeria imagen"class="col-md-4 img-fluid img-hover" >
+
+  </div> 
+  <div class="row"> 
+    
+    <img src="img/Galeria4.jpeg" alt="Galeria imagen" class="col-md-4 img-fluid img-hover">
+    
+    <img src="img/Galeria5.jpeg" alt="Galeria imagen" class="col-md-4 img-fluid img-hover">
+
+    <img src="img/Galeria6.jpeg" alt="Galeria imagen" class="col-md-4 img-fluid img-hover">
+
+  </div> 
+
+  </div>
+  
+ <script src="js/bootstrap.bundle.min.js"></script>
+</div>
+   
+    
+    <!--FOOTER  -->
+    <footer class="footer">
+      <div class="align-items-center col text-center">
+          <div class="footer-icons p-3">
+            <h3> <strong>FRAPPES GOURMET</strong></h3>
+            <p>¡Síguenos en nuestras redes sociales!</p>
+            <!-- Iconos de redes sociales -->
+            <a class="text-secondary fa-lg" href="#"><i class="fab fa-facebook"></i></a>
+            <a class="text-secondary fa-lg" href="#"><i class="fab fa-instagram"></i></a>
+            <a class="text-secondary fa-lg" href="#"><i class="fab fa-whatsapp"></i></a> 
+          </div> 
+        </div>
+  </footer>
+</body>
+</html>
